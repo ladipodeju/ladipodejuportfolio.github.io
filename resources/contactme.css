@@ -1,0 +1,334 @@
+
+/* =======  Font type  =======  */
+@font-face {
+    font-family: 'Poppins';
+    src: url(./fonts/Poppins-Regular.ttf);
+}
+
+
+
+/* =======  Global Styles  =======  */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #012E40;
+    background-image: linear-gradient(to bottom right,#172026, #011740, #023535);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+/* ======= Header-Section Styles ======= */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 1.44% 5% 1.44%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-image: linear-gradient(to bottom right,#172026, #011740);
+}
+
+.name a {
+    cursor: default;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.name a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+ul li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 35px;
+}
+
+li a {
+    text-decoration: none;
+    color: #fff;
+    transition: .3s;
+}
+
+li a:hover, .active {
+    color: #41BFB3;
+    
+}
+
+
+
+/* ======= Hamburger Styles ======= */
+
+.mobile-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 1.44% 5% 1.44%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-image: linear-gradient(to bottom right,#172026, #011740);
+}
+
+.logo-name {
+    color: #fff;
+}
+
+#hamburger-nav {
+    display: none;
+}
+
+.hamgurger-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: 24px;
+   width: 30px; 
+   cursor: pointer;
+}
+
+.hamburger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition: all .3s ease-in-out;
+    margin-top: 6px;
+}
+
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-image: linear-gradient(to bottom,#172026, #011740, #023535);
+    width: 80%;
+    max-height: 0;
+    overflow: hidden;
+    transition: all.3s ease-in-out;
+}
+
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+
+.menu-links li {
+    list-style: none;
+}
+
+.menu-links.open {
+    max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(6px, 5px);
+}
+.hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(6px, -5px);
+}
+
+
+.hamburger-icon span:first-child {
+    transform: none;
+}
+.hamburger-icon span:nth-child(2) {
+    opacity: 1;
+}
+.hamburger-icon span:last-child {
+    transform: none;
+}
+
+
+
+/* ======= Media queries for navigation menu ======= */
+
+@media screen and (max-width: 1023px) {
+    #hamburger-nav {
+        display: flex;
+    }
+
+    header {
+        display: none;
+    }
+}
+
+
+
+/* ======= Main-Section Styles ======= */
+
+.contact-me {
+    color: #fff;
+    margin-top: 250px;
+    padding: 0 5%;
+    width: 80%;
+    /*min-width: 200px;*/
+}
+
+.team-up h2 {
+    margin-top: -200px;
+    margin-bottom: 15px;
+    color: #41BFB3;
+}
+
+.team-up h1 {
+    font-size: 2.5rem;
+    height: 100vh;
+    opacity: 0;
+    -webkit-animation: growIn .5s 2s forwards, slideIn 1s 1s forwards;
+    animation: growIn .5s .2s forwards, slideIn 1s 1s forwards;
+    position: relative;
+    left: 0;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+    padding-bottom: 150px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #41BFB3;
+    font-weight: 600;
+}
+
+.social-links a:hover {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.social-links .fa {
+    padding: 10px;
+    color: #41BFB3;
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+
+.social-links .fa:hover {
+    color: #fff;
+    cursor: pointer;
+}    
+
+.social-links a:hover {
+    margin-bottom: 6px;
+}
+
+/* ======= Footer Section Styles ======= */
+.footer {
+    margin-top: 70px;
+    bottom: 20px;
+    width: 100%;
+}
+
+.copyright {
+    margin: 0 auto;
+    padding: 10px 0 20px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: .8rem;
+    border-top: 1px solid rgb(65, 191, 179, 0.3);
+    width: 80%;
+}
+
+.item {
+    margin-right: 5px;
+}
+
+.fa-copyright {
+    padding-top: 2.8px;
+}
+
+
+
+/* ======= Animations ======= */
+
+@keyframes growIn {
+    0% {
+        transform: scale(0.1);
+        opacity: 0.1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes growIn {
+    0% {
+        transform: scale(0.1);
+        opacity: 0.1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+@keyframes slideIn {
+    100% {
+        left: 10%;
+    }
+}
+
+@-webkit-keyframes slideIn {
+    100% {
+        left: 10%;
+    }
+}
+
+
+
+/* ======= Media queries for page layout ======= */
+
+@media screen and (max-width: 900px) {
+    .contact-me {
+        width: 100%;
+    }
+
+    .social-links {
+        width: 60%;
+    }
+}
+

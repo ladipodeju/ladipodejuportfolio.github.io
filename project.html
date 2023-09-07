@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./resources/project.css">
+    <link rel="stylesheet" href="./resources/animation.css">
+    <link rel="stylesheet" href="./resources/font-awesome-4.7.0/css/font-awesome.css">
+    <script src="./funtionality/hamburgerMenu.js" defer></script>
+    <title>Project</title>
+</head>
+<body>
+    <header id="header">
+        <div class="name bold">
+            <a href="./home.html">Taye.</a>
+        </div>
+        
+        <nav class="nav-bar">
+            <ul class="links bold">
+                <li><a  href="./home.html">Home</a></li>
+                <li><a href="./aboutme.html">About</a></li>
+                <li style="display: none;"><a href="">Experience</a></li>
+                <li><a class="active" href="">Project</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav id="hamburger-nav" class="mobile-nav">
+        <div class="logo-name bold">
+            <p>Taye.</p>
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links bold">
+                <li><a href="./home.html" onclick="toggleMenu()">Home</a></li>
+                <li><a href="./aboutme.html" onclick="toggleMenu()">About</a></li>
+                <li style="display: none;"><a href="">Experience</a></li>
+                <li><a class="active" href="" onclick="toggleMenu()">Project</a></li>
+                <li><a href="./contact.html" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <main class="project">
+        <div class="my-projects">
+            <h2>Projects</h2>
+            <p>I'm excited to share my work with you.</p>
+            <p>Here are some of my recent work that demonstrate my abilities and skills.</p>
+        </div>
+        <div class="view center">
+            <div class="youtube-replica replica">
+                <img src="./resources/images/youtube_replica.png" alt="a picture/screenshot of my replica of Youtube's landing page">
+                <h3>Youtube Replication</h3>
+                <a href="">View Prototype</a> <i class="fa fa-arrow-left"></i>
+
+            </div>
+            <div class="twitter-replica replica">
+                <img src="./resources/images/youtube_replica.png" alt="a picture/screenshot of my replica of Twiter's landing page">
+                <h3>Youtube Replication</h3>
+                <a href="">View Prototype</a> <i class="fa fa-arrow-left"></i>
+            </div>
+            <div class="gmail-replica replica">
+                <img src="./resources/images/youtube_replica.png" alt="a picture/screenshot of my replica of Gmail's landing page">
+                <h3>Youtube Replication</h3>
+                <a href="">View Prototype</a> <i class="fa fa-arrow-left"></i>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="copyright">
+            <i class="fa fa-copyright item"></i>
+            <p class="year item">2023</p>
+            <p class="identity item">Adejuyigbe Taye.</p>
+        </div>
+    </footer>
+</body>
+</html>

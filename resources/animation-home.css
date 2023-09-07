@@ -1,0 +1,37 @@
+.about-me h1 {
+    position: relative;
+    left: -200%;
+    -webkit-animation: slideIn 1s .5s forwards;
+    animation: slideIn 1s .5s forwards;
+}
+
+
+.about-me h2 {
+    position: relative;
+    left: -200%;
+    -webkit-animation: slideIn 1s 1s forwards;
+    animation: slideIn 1s 1s forwards;
+}
+
+.about-me p, .about-me .see-more, .about-me .contact-me {
+    position: relative;
+    left: -200%;
+    -webkit-animation: slideIn 1s 1.5s forwards;
+    animation: slideIn 1s 1.5s forwards;
+}
+
+
+@keyframes slideIn {
+    100% {
+        left: 0;
+    }
+}
+
+@-webkit-keyframes slideIn {
+    100% {
+        left: 0;
+    }
+}
+
+
+

@@ -1,0 +1,413 @@
+
+/* =======  Font type  =======  */
+@font-face {
+    font-family: 'Poppins';
+    src: url(./fonts/Poppins-Regular.ttf);
+}
+
+
+
+/* =======  Global Styles  =======  */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #012E40;
+    background-image: linear-gradient(to bottom right,#172026, #011740, #023535);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+/* ======= Header-Section Styles ======= */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 1.44% 5% 1.44%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-image: linear-gradient(to bottom right,#172026, #011740);
+}
+
+.name a {
+    cursor: default;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.name a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+ul li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 35px;
+}
+
+li a {
+    text-decoration: none;
+    color: #fff;
+    transition: .3s;
+}
+
+li a:hover, .active {
+    color: #41BFB3;
+    
+}
+
+
+
+/* ======= Hamburger Styles ======= */
+
+.mobile-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 1.44% 5% 1.44%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-image: linear-gradient(to bottom right,#172026, #011740);
+}
+
+.logo-name {
+    color: #fff;
+}
+
+#hamburger-nav {
+    display: none;
+}
+
+.hamgurger-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: 24px;
+   width: 30px; 
+   cursor: pointer;
+}
+
+.hamburger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition: all .3s ease-in-out;
+    margin-top: 6px;
+}
+
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-image: linear-gradient(to bottom,#172026, #011740, #023535);
+    width: 80%;
+    max-height: 0;
+    overflow: hidden;
+    transition: all.3s ease-in-out;
+}
+
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+
+.menu-links li {
+    list-style: none;
+}
+
+.menu-links.open {
+    max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(6px, 5px);
+}
+.hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(6px, -5px);
+}
+
+
+.hamburger-icon span:first-child {
+    transform: none;
+}
+.hamburger-icon span:nth-child(2) {
+    opacity: 1;
+}
+.hamburger-icon span:last-child {
+    transform: none;
+}
+
+
+
+/* ======= Media queries for navigation menu ======= */
+
+@media screen and (max-width: 1023px) {
+    #hamburger-nav {
+        display: flex;
+    }
+
+    header {
+        display: none;
+    }
+}
+
+
+
+/* ======= Main section Styles ======= */
+
+.project {
+    color: #fff;
+    margin-top: 200px;
+    padding: 0 5%;
+    width: 100%;
+}
+
+.my-projects {
+    margin: 0 auto;
+    text-align: center;
+    animation: growIn .5s;
+    -webkit-animation: growIn .5s;
+}
+
+.my-projects h2 {
+    margin-bottom: 20px;
+}
+
+.view {
+    width: 100%;
+    margin: 70px 0 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 50px 15px;
+}
+
+.view div {
+    opacity: 0;
+    border-radius: 15px;
+    padding: 10px 15px 80px;
+    background-color: hsl(174, 50%, 50%, .1);
+    animation: growInDiv .3s .5s forwards;
+    -webkit-animation: growInDiv .3s .5s forwards;
+}
+
+.replica img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: .5s;
+    border-radius: 10px;
+}
+
+.replica img:hover {
+    border-radius: 0;
+    width: 99%;
+}
+
+.replica h3 {
+    margin-top: 6px;
+}
+
+.replica a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.replica a:hover {
+    cursor: pointer;
+    color: #41BFB3;
+}
+
+.fa-arrow-left {
+    display: inline-block;
+    margin-left: 5px;
+    position: relative;
+    color: #41BFB3;
+    -webkit-animation: moveRight 2s 3s infinite;
+    animation: moveRight 2s 3s infinite;
+}
+
+
+
+/* ======= Footer Section Styles ======= */
+
+.footer {
+    margin-top: 70px;
+    bottom: 20px;
+    width: 100%;
+}
+
+.copyright {
+    margin: 0 auto;
+    padding: 10px 0 20px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: .8rem;
+    border-top: 1px solid rgb(65, 191, 179, 0.3);
+    width: 80%;
+}
+
+.item {
+    margin-right: 5px;
+}
+
+.fa-copyright {
+    padding-top: 2.8px;
+}
+
+
+
+/* ======= Animations ======= */
+
+@keyframes growIn {
+    0% {
+        transform: scale(0.1);
+        opacity: 0.1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes growIn {
+    0% {
+        transform: scale(0.1);
+        opacity: 0.1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+@keyframes growInDiv {
+    0% {
+        transform: scale(0.8);
+        opacity: 0.1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes growInDiv {
+    0% {
+        transform: scale(0.1);
+        opacity: 0.1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+@keyframes moveRight {
+    0% {
+        left: 0;
+    }
+    
+    50% {
+        left: 10px;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+@-webkit-keyframes moveRight {
+    0% {
+        left: 0;
+    }
+    
+    50% {
+        left: 10px;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+
+
+
+/* ======= Media queries for page layout ======= */
+
+@media screen and (max-width: 700px) {
+    .view {
+        width: 90%;
+        margin: 70px 0 40px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        row-gap: 60px;
+    }   
+
+    .center {
+        margin: 0 auto;
+    }
+
+    .my-projects {
+        height: 50vh;
+    }
+
+    .replica a {
+        text-decoration: none;
+        color: #fff;
+        border: 2px solid #41BFB3;
+        background-color: #41BFB3;
+        border-radius: 10px;
+        padding: 4px;
+    }
+
+    .replica h3 {
+        margin-bottom: 8px;
+    }
+
+    .fa-arrow-left {
+        opacity: 0;
+    }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./resources/contactme.css">
+    <link rel="stylesheet" href="./resources/animation.css">
+    <link rel="stylesheet" href="./resources/font-awesome-4.7.0/css/font-awesome.css">
+    <script src="./funtionality/hamburgerMenu.js" defer></script>
+    <title>Contact</title>
+</head>
+<body>
+    <header id="header">
+        <div class="name bold">
+            <a href="./home.html">Taye.</a>
+        </div>
+        
+        <nav class="nav-bar">
+            <ul class="links bold">
+                <li><a  href="./home.html">Home</a></li>
+                <li><a href="./aboutme.html">About</a></li>
+                <li style="display: none;"><a href="">Experience</a></li>
+                <li><a href="./project.html">Project</a></li>
+                <li><a class="active" href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav id="hamburger-nav" class="mobile-nav">
+        <div class="logo-name bold">
+            <p>Taye.</p>
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links bold">
+                <li><a href="./home.html" onclick="toggleMenu()">Home</a></li>
+                <li><a href="./aboutme.html" onclick="toggleMenu()">About</a></li>
+                <li style="display: none;"><a href="">Experience</a></li>
+                <li><a href="./project.html" onclick="toggleMenu()">Project</a></li>
+                <li><a class="active" href="./contact.html" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <main class="contact-me">
+        <div class="team-up">
+            <h1>Let's work on something!</h1>
+            <h2>Contact</h2>
+            <p>I'm available and seeking out opportunities to collaborate with companies or individuals. I want to bring my skills to the table where we can work on live products or build them from scratch.</p> <br>
+            <p>Feel free to reach out through any of these platforms:</p>
+        </div>
+
+        <div class="social-links">
+            <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BQH8l3vmRQUaRaO258RKsuA%3D%3D" target="_blank">LinkedIn<i class="fa fa-linkedin fa-lg linkedIn"></i></a>
+            <a href="https://twitter.com/ladipodeju/" target="_blank">Twitter<i class="fa fa-twitter fa-lg twitter"></i></a>
+            <a href="mailto:ladipodeju@gmail.com" target="_blank">Email<i class="fa fa-envelope-o fa-lg mail" aria-hidden="true"></i></a>
+            <a style="display: none;" href=""><i class="fa fa-whatsapp fa-lg whatsapp" aria-hidden="true"></i></a>
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <div class="copyright">
+            <i class="fa fa-copyright item"></i>
+            <p class="year item">2023</p>
+            <p class="identity item">Adejuyigbe Taye.</p>
+        </div>
+    </footer>
+</body>    

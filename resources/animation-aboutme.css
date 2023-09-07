@@ -1,0 +1,70 @@
+.name2 {
+    -webkit-animation: growIn .5s forwards;
+    animation: growIn .5s forwards;
+}
+
+.pic {
+    opacity: 0;
+    animation: growInDiv .5s 1.3s forwards;
+    -webkit-animation: growInDiv .5s 1.3s forwards;
+}
+
+.mobile {
+    opacity: 0;
+    animation: growInDiv .3s .5s forwards;
+    -webkit-animation: growInDiv .3s .5s forwards;
+}
+
+.details {
+    opacity: 0;
+    -webkit-animation: growIn .5s .8s forwards;
+    animation: growIn .5s .8s forwards;
+}
+
+
+
+@keyframes growIn {
+    0% {
+        transform: scale(0.1);
+        opacity: 0.1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes growIn {
+    0% {
+        transform: scale(0.1);
+        opacity: 0.1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes growInDiv {
+    0% {
+        transform: scale(0.8);
+        opacity: 0.1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes growInDiv {
+    0% {
+        transform: scale(0.1);
+        opacity: 0.1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+

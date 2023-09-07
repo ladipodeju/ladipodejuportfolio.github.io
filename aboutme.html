@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./resources/animation-aboutme.css">
+    <link rel="stylesheet" href="./resources/aboutme.css">
+    <link rel="stylesheet" href="./resources/font-awesome-4.7.0/css/font-awesome.css">
+    <script src="./funtionality/hamburgerMenu.js" defer></script>
+    <title>About Me</title>
+</head>
+<body>
+    <header id="header">
+        <div class="name bold">
+            <a href="./home.html">Taye.</a>
+        </div>
+        
+        <nav class="nav-bar">
+            <ul class="links bold" role="presentation">
+                <li><a  href="./home.html">Home</a></li>
+                <li><a class="active" href="">About</a></li>
+                <li style="display: none;"><a href="">Experience</a></li>
+                <li><a href="./project.html">Project</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav id="hamburger-nav" class="mobile-nav">
+        <div class="logo-name bold">
+            <p>Taye.</p>
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links bold">
+                <li><a href="./home.html" onclick="toggleMenu()">Home</a></li>
+                <li><a class="active" href="" onclick="toggleMenu()">About</a></li>
+                <li style="display: none;"><a href="">Experience</a></li>
+                <li><a href="./project.html" onclick="toggleMenu()">Project</a></li>
+                <li><a href="./contact.html" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+
+    <main class="about-me">
+        <div class="pic one" role="presentation">
+            <img src="./resources/images/profile_photo.png" alt="profile photo">
+        </div>
+
+
+        <div class="intro">
+            <div class="name2" role="presentation">
+                <h1>Hi, I'm Taye.</h1>
+                <h2>A Frontend Developer <span style="color: #fff;">based in Nigeria.</span></h2>
+            </div>
+
+            <div class="pic mobile" role="presentation">
+                <img src="./resources/images/profile_photo.png" alt="profile photo">
+            </div>
+        
+            <div class="details">
+                <p class="one">As a frontend developer, I enjoy building & turning complex problems into simple, beautiful and intuitive products for consumption. My zeal & curiosity for understanding how the web works led to the idea of embarking on this fontend coding journey. I believe that understanding the general responsibility of a frontend developer - ensuring that web users can easily read and navigate your products through a combination of design and frontend technologies, is key to being a well sought-after developer.</p>
+                <p class="two">I'm a fast learner, I'm easily inspired and motivated, I love to visualize & build things from the ground up. I derive utmost pleasure in coming up with ideas, acting on them and seeing those ideas turn into final products or integrated into already made products.</p>
+                <p class="three">My goal is to keep on challenging myself, continue learning and to create scalable products that follow standards developed by Web Accessibility Initiative (led by W3C) that fall under a group of guidelines called ARIA, for optimum accessibility. Ultimately, creating solutions to different kinds of problems within a wide range of users.</p>
+                <p class="four">You can read more about my biography, skills, education and more in the PDF attached below: </p>
+                <a href=""><p class="five">My resume (PDF 105kb)</p></a>
+            </div>
+
+        </div>    
+    </main>
+
+    <div class="skills">
+        <h2>SKILLS</h2>
+        
+        <div class="container">
+            <div class="icons">
+                <div class="html">
+                    <i class="fa fa-html5 fa-3x html"></i>
+                    <p>HTML</p>
+                </div>
+                <div class="css">
+                    <i class="fa fa-css3 fa-3x css"></i>
+                    <p>CSS</p>
+                </div>
+                <div class="javascript">
+                    <img class="js_icon fa" src="./resources/images/JavaScript_icon.png" alt="JavaScript icon picture">
+                    <P>JAVASCRIPT</P>
+                </div>
+                <div class="git">
+                    <i class="fa fa-git-square fa-3x git"></i>
+                    <p>GIT</p>
+                </div>
+            </div>
+    
+            <div class="others">
+                <div class="design">
+                    <p>Accesibilty Design</p>
+                </div>
+    
+                <div class="design">
+                    <p>UI Design</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="footer">
+        <div class="copyright">
+            <i class="fa fa-copyright item"></i>
+            <p class="year item">2023</p>
+            <p class="identity item">Adejuyigbe Taye.</p>
+        </div>
+    </footer>
+</body>
+</html>
