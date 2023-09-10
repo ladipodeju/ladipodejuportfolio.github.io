@@ -22,8 +22,7 @@ html {
 }
 
 body {
-    background-color: #012E40;
-    background-image: linear-gradient(to bottom right,#172026, #011740, #023535);
+    background-color: #000;
     background-repeat: no-repeat;
     background-size: cover;
     background-repeat: no-repeat;
@@ -45,7 +44,7 @@ header {
     top: 0;
     width: 100%;
     z-index: 1;
-    background-image: linear-gradient(to bottom right,#172026, #011740);
+    background-color: #000;
 }
 
 .name a {
@@ -94,7 +93,7 @@ li a:hover, .active {
     top: 0;
     width: 100%;
     z-index: 1;
-    background-image: linear-gradient(to bottom right,#172026, #011740);
+    background-color: #000;
 }
 
 .logo-name {
@@ -131,8 +130,8 @@ li a:hover, .active {
     position: absolute;
     top: 100%;
     right: 0;
-    background-image: linear-gradient(to bottom,#172026, #011740, #023535);
-    width: 80%;
+    background-color: rgb(9, 9, 9);
+    width: 100%;
     max-height: 0;
     overflow: hidden;
     transition: all.3s ease-in-out;
@@ -199,7 +198,6 @@ li a:hover, .active {
     padding: 0 5%;
     width: 60%;
     color: #fff;
-    letter-spacing: .5px;
     height: 100vh;
 }
 
@@ -209,7 +207,6 @@ li a:hover, .active {
 
 .about-me h1 {
     width: 100%;
-    line-height: 1.2;
     margin-bottom: 10px;
 }
 
@@ -228,6 +225,10 @@ li a:hover, .active {
     color: #41BFB3;
 }
 
+.see-more:hover {
+    color: #ff9933;
+}
+
 .contact-me {
     display: flex;
     justify-content: space-between;
@@ -244,7 +245,7 @@ li a:hover, .active {
     align-items: center;
     height: inherit;
     width: 45%;
-    color: #011740;
+    color: #000;
     background-color: #41BFB3;
     border: 1.5px solid #41BFB3;
     text-decoration: none;
@@ -265,7 +266,8 @@ li a:hover, .active {
 }
 
 .contact-me a:nth-child(2):hover {
-    color: #011740;
+    /*color: #011740;*/
+    color: #000;
 }
 
 .contact-me a:hover {
@@ -275,7 +277,7 @@ li a:hover, .active {
     content: '';
     height: 100%;
     width: 0%;
-    background-color: #011740;
+    background-color: #000;
     position: absolute;
     left: 0;
     top: 0;
@@ -302,7 +304,7 @@ li a:hover, .active {
 
 .social-links .fa:hover {
     background-color: #41bfb3;
-    color: #011740;
+    color: #000;
     cursor: pointer;
 }    
 
@@ -350,7 +352,7 @@ li a:hover, .active {
     }
 
     .contact-me {
-        width: 53%;
+        width: 70%;
         height: 40px;
 
     }

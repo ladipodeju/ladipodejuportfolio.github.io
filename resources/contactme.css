@@ -21,8 +21,7 @@ html {
 }
 
 body {
-    background-color: #012E40;
-    background-image: linear-gradient(to bottom right,#172026, #011740, #023535);
+    background-color: #000;
     background-repeat: no-repeat;
     background-size: cover;
     background-repeat: no-repeat;
@@ -44,7 +43,7 @@ header {
     top: 0;
     width: 100%;
     z-index: 1;
-    background-image: linear-gradient(to bottom right,#172026, #011740);
+    background-color: #000;
 }
 
 .name a {
@@ -92,7 +91,7 @@ li a:hover, .active {
     top: 0;
     width: 100%;
     z-index: 1;
-    background-image: linear-gradient(to bottom right,#172026, #011740);
+    background-color: #000;
 }
 
 .logo-name {
@@ -129,8 +128,8 @@ li a:hover, .active {
     position: absolute;
     top: 100%;
     right: 0;
-    background-image: linear-gradient(to bottom,#172026, #011740, #023535);
-    width: 80%;
+    background-color: rgb(9, 9, 9);
+    width: 100%;
     max-height: 0;
     overflow: hidden;
     transition: all.3s ease-in-out;
@@ -197,7 +196,6 @@ li a:hover, .active {
     margin-top: 250px;
     padding: 0 5%;
     width: 80%;
-    /*min-width: 200px;*/
 }
 
 .team-up h2 {
@@ -234,7 +232,6 @@ li a:hover, .active {
 .social-links a:hover {
     color: #fff;
     cursor: pointer;
-    text-decoration: underline;
 }
 
 .social-links .fa {

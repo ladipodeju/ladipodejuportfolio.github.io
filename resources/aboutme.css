@@ -21,8 +21,7 @@ html {
 }
 
 body {
-    background-color: #012E40;
-    background-image: linear-gradient(to bottom right,#172026, #011740, #023535);
+    background-color: #000;
     background-repeat: no-repeat;
     background-size: cover;
     background-repeat: no-repeat;
@@ -44,7 +43,7 @@ header {
     top: 0;
     width: 100%;
     z-index: 1;
-    background-image: linear-gradient(to bottom right,#172026, #011740);
+    background-color: #000;
 }
 
 .name a {
@@ -90,9 +89,7 @@ li a:hover, .active {
     top: 0;
     width: 100%;
     z-index: 1;
-    background-image: linear-gradient(to bottom right,#172026, #011740);
-    /*background-color: yellow;*/
-    /*margin-top: 70px;*/
+    background-color: #000;
 }
 
 .logo-name {
@@ -129,8 +126,8 @@ li a:hover, .active {
     position: absolute;
     top: 100%;
     right: 0;
-    background-image: linear-gradient(to bottom,#172026, #011740, #023535);
-    width: 80%;
+    background-color: rgb(9, 9, 9);
+    width: 100%;
     max-height: 0;
     overflow: hidden;
     transition: all.3s ease-in-out;
@@ -194,17 +191,13 @@ li a:hover, .active {
 
 .about-me {
     color: #fff;
-    /*margin-top: 8%;*/
     margin-top: 150px;
     padding: 0 2.7%;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
-    /*border: 1px solid red;*/
     overflow: hidden;
     z-index: 0;
-    /*flex-direction: column;*/
-    /*background-color: tomato;*/
 }
 
 .name2 h1 {
@@ -213,18 +206,15 @@ li a:hover, .active {
 }
 
 .name2 {
-    /*background-color: red;*/
     color: #41BFB3;
     line-height: 1.6;
 }
 
 .intro .mobile {
-    /*border: 1px solid green;*/
     display: none;
 }
 
 .details {
-    /*border: 1px solid pink;*/
     line-height: 170%;
     padding: 0 5px 0;
 }
@@ -234,21 +224,15 @@ li a:hover, .active {
     color: #41BFB3;
 }
 
-/*.name2 {
-    border: 1px solid white;
-}*/
 
 .pic {
     width: 30%;
     height: 300px;
-    /*border-radius: 50px;*/
 }
 
 .pic img {
     max-width: 100%;
     border-radius: 30px;
-    /*background-blend-mode: lighten;*/
-    
 }
 
 .intro, .details {
@@ -262,13 +246,9 @@ li a:hover, .active {
 }
 
 .details {
-    /*height: 20%;*/
-    /*background-color: yellow;*/
     margin: 25px 0;
-    /*padding: 5% 0;*/
     width: 80%;
     text-align: left;
-    /*align-items: center;*/
 }
 
 .details p {
@@ -277,7 +257,6 @@ li a:hover, .active {
 
 .skills {
     width: 80%;
-    /*background-color: green;*/
     margin: 25% auto;
     text-align: center;
 }
@@ -291,7 +270,6 @@ li a:hover, .active {
     border: 1px solid #41BFB3;
     border-radius: 10px;
     padding: 50px 20px 0px;
-    /*padding: 20px;*/
     margin-bottom: 50px;
 }
 
@@ -309,8 +287,8 @@ li a:hover, .active {
 }
 
 .js_icon {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 
 .git {
@@ -325,6 +303,10 @@ li a:hover, .active {
     color: #264de4;
 }
 
+.html p, .css p, .javascript p, .git p {
+    color: #fff;
+}
+
 .others {
     display: flex;
     justify-content: space-evenly;
@@ -332,11 +314,10 @@ li a:hover, .active {
 }
 
 .others div {
-    /*background-color: #41BFB3;*/
     background-color: #012E40;
     background-image: linear-gradient(to bottom right,#172026, #011740, #023535);
     padding: 1%;
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     border-radius: 10px;
     color: #fff;
 }
@@ -372,9 +353,24 @@ li a:hover, .active {
 
 
 
+
 /* ======= Media queries for page layout ======= */
 
 @media screen and (max-width: 1023px) {
+    .name2 {
+        margin-top: 90px;
+        height: 50vh;
+        padding-left: 10px;
+    }
+
+    .name2 .larger {
+        font-size: 2.2rem;
+    }
+
+    .name2 .large {
+        font-size: 2rem;
+    }
+    
     .about-me .one {
         display: none;
     }
@@ -386,11 +382,10 @@ li a:hover, .active {
 
     .pic {
         width: 80%;
-        height: 100%;
+        height: auto;
         overflow: hidden;
-        margin: 30% 0 40%;
+        margin: 30% 0 0;
         border-radius: 10px;
-        /*background-blend-mode: luminosity;*/
     }
     
     .pic img {
@@ -416,8 +411,4 @@ li a:hover, .active {
     .container {
         padding: 20px;
     }
-    
 }
-
-
-
