@@ -21,8 +21,7 @@ html {
 }
 
 body {
-    background-color: #012E40;
-    background-image: linear-gradient(to bottom right,#172026, #011740, #023535);
+    background-color: #000;
     background-repeat: no-repeat;
     background-size: cover;
     background-repeat: no-repeat;
@@ -44,7 +43,7 @@ header {
     top: 0;
     width: 100%;
     z-index: 1;
-    background-image: linear-gradient(to bottom right,#172026, #011740);
+    background-color: #000;
 }
 
 .name a {
@@ -92,7 +91,7 @@ li a:hover, .active {
     top: 0;
     width: 100%;
     z-index: 1;
-    background-image: linear-gradient(to bottom right,#172026, #011740);
+    background-color: #000;
 }
 
 .logo-name {
@@ -129,8 +128,8 @@ li a:hover, .active {
     position: absolute;
     top: 100%;
     right: 0;
-    background-image: linear-gradient(to bottom,#172026, #011740, #023535);
-    width: 80%;
+    background-color: rgb(9, 9, 9);
+    width: 100%;
     max-height: 0;
     overflow: hidden;
     transition: all.3s ease-in-out;
@@ -222,8 +221,8 @@ li a:hover, .active {
 .view div {
     opacity: 0;
     border-radius: 15px;
-    padding: 10px 15px 80px;
-    background-color: hsl(174, 50%, 50%, .1);
+    padding: 10px 15px 0px;
+    background-color: hsla(180, 2%, 47%, 0.1);
     animation: growInDiv .3s .5s forwards;
     -webkit-animation: growInDiv .3s .5s forwards;
 }
@@ -241,7 +240,7 @@ li a:hover, .active {
     width: 99%;
 }
 
-.replica h3 {
+.replica h4 {
     margin-top: 6px;
 }
 
@@ -253,6 +252,14 @@ li a:hover, .active {
 .replica a:hover {
     cursor: pointer;
     color: #41BFB3;
+}
+
+.replica h3 {
+    text-align: center;
+    justify-self: baseline;
+    margin-top: 20%;
+    padding-bottom: 10px;
+    color: #D92525;
 }
 
 .fa-arrow-left {
@@ -391,7 +398,7 @@ li a:hover, .active {
     }
 
     .my-projects {
-        height: 50vh;
+        height: 30vh;
     }
 
     .replica a {
@@ -400,10 +407,14 @@ li a:hover, .active {
         border: 2px solid #41BFB3;
         background-color: #41BFB3;
         border-radius: 10px;
-        padding: 4px;
+        padding: 1.5px;
     }
 
-    .replica h3 {
+    .replica a:active {
+        color: #ff9933;
+    }
+    
+    .replica h4 {
         margin-bottom: 8px;
     }
 
